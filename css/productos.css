@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background-color: rgb(243,243,248);
+  background-color: rgb(102, 203, 216);
   width: 100%;
   height: 80px;
 }
@@ -31,7 +31,7 @@ nav a i {
 }
 #contenedor {
     margin-top: 50px;
-    margin-bottom: 50PX;
+    margin-bottom: 180PX;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -47,7 +47,7 @@ nav a i {
     margin: 10px;
     box-shadow: 3px 3px 7px rgb(8, 28, 144);
     padding: 10px;
-    background-color: rgb(233, 233, 147) ;
+    background-color: rgb(197, 238, 103) ;
     border-radius: 10px;
 
 }
@@ -70,16 +70,15 @@ nav a i {
     width: 90%;
     height: 30px;
     border-radius: 5px;
-    background-color: rgb(214, 236, 14);
+    background-color: rgb(132, 236, 118);
     color: rgb(17, 130, 195);
     cursor: pointer;
     box-shadow: px 2px 4px rgb(46, 214, 172);
 }
 .image button:hover{
-    background-color: rgb(16, 224, 36);
-    box-shadow: 2px 2px 4px rgb(73, 3, 77);
+    background-color: rgb(201, 204, 235);
+    box-shadow: 2px 2px 4px rgb(110, 163, 143);
 }
-
 
 .item img {
   width: 100%;
@@ -87,12 +86,10 @@ nav a i {
   border-radius: 5px;
   margin-bottom: 10px;
 }
-
 .item p {
   font-size: 16px;
   margin: 10px 0;
 }
-
 
 .item .btn {
   display: inline-block;
@@ -112,8 +109,8 @@ footer {
   background-color: black ;
   color: white ;
   position: relative;
-  padding: 30px;
-  min-height: 150px;
+  padding: 25px;
+  min-height: 160px;
 }
 .contenedor-footer {
   position: relative;
@@ -126,7 +123,7 @@ footer {
 .redes {
   position: absolute;
   right: 30px;
-  top: 45px;
+  top: 55px;
 
 }
 .redes a {
@@ -149,7 +146,7 @@ footer {
 .derechos {
   position: absolute;
   left: 30px;
-  bottom: 10px;
+  bottom: 15px;
 
 }
 .derechos p {
@@ -163,4 +160,176 @@ footer hr {
 
 }
 
+.contenedor-menu{
+    width:100%;
+    height:80px;
+    position:relative;
+}
 
+.logo-menu{
+    width:68px;
+    height:68px;
+    object-fit:contain;
+    position:absolute;
+    left:20px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.menu{
+    width:100%;
+    height:80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.menu a{
+    text-decoration:none;
+    margin:0 10px;
+    color:#111;
+    font-size:18px;
+}
+
+.menu i{
+    margin-right:5px;
+    font-size:35px;
+}
+
+#menu_bar{
+    display:none;
+}
+
+header label{
+    display:none;
+}
+
+@media(max-width:900px) and (min-width:601px){
+
+.menu a{
+    font-size:16px;
+    margin:5px;
+}
+
+.menu i{
+    font-size:28px;
+}
+
+#contenedor .image{
+    width:230px;
+}
+
+}
+
+@media(max-width:600px){
+
+
+header{
+    height:60px;
+}
+
+
+.contenedor-menu{
+    height:60px;
+}
+
+
+.logo-menu{
+    width:55px;
+    height:55px;
+    left:15px;
+}
+
+header label{
+
+    display:block;
+    position:absolute;
+    right:20px;
+    top:15px;
+    font-size:30px;
+    color:#111;
+    cursor:pointer;
+    z-index:200;
+
+}
+
+.menu{
+
+    position:absolute;
+    top:60px;
+    left:0;
+    width:100%;
+    height:auto;
+    background:rgba(166, 224, 31, 0.486);
+    display:block;
+    transform:translateX(-100%);
+    transition:.3s;
+    z-index:100;
+
+}
+
+.menu a{
+
+    display:block;
+    padding:15px;
+    margin:0;
+    font-size:17px;
+
+}
+
+.menu i{
+
+    font-size:25px;
+
+}
+
+#menu_bar:checked ~ .menu{
+
+    transform:translateX(0);
+
+}
+
+#contenedor{
+
+    flex-direction:column;
+    align-items:center;
+}
+
+#contenedor .image{
+
+    width:90%;
+    max-width:320px;
+    height:350px;
+
+}
+
+footer{
+
+    min-height:250px;
+
+}
+
+.redes{
+
+    position:static;
+    text-align:center;
+    margin-top:25px;
+
+}
+
+.redes a{
+
+    font-size:35px;
+    margin:0 8px;
+
+}
+
+.derechos{
+
+    position:static;
+    text-align:center;
+    margin-top:30px;
+
+}
+
+}

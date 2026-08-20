@@ -1,105 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">  <!--estructura del html-->
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Acompañamiento a Mayores</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/contacto.css">
 </head>
-<body style="margin:0; padding: 0;">
-    
 
+<body>
 
-    <header style="background-color: rgb(100 , 213, 210); width: 100%; height: 80px;">  
-    <header style="background-color: rgb(); width: 100%; height: 80px;">  
-        <nav>
-            <img src="img/logo1.png.png" width="68px"><!--sale de la carpeta con ../-->
-            <a href="home.html" style="color: rgb(17, 16, 16);"><i class="fa fa-home" style="font-size:40px;"></i> Home</a> | <!--sale de la biblioteca-->
-            <a href="Productos.html" style="color: rgb(13, 13, 13);"><i class="fa fa-cubes" style="font-size:40px;"></i> Productos</a> |
-            <a href="Contacto.html" style="color: rgb(7, 7, 7);"><i class="fa fa-phone" style="font-size:40px;"></i> Contacto</a> |
-            <a href="Registrar.html" style="color: rgb(11, 11, 11);"><i class="fa fa-user-plus" style="font-size:40px;"></i> Registrar</a> |
-            <a href="Blog.html" style="color: rgb(11, 11, 11);"><i class="fa fa-comments"" style="font-size:40px;"></i> Blog</a> |
-            <a href="Compañía.html" style="color: rgb(11, 11, 11);"><i class="fa fa-building" style="font-size:40px;"></i> Compañía</a> |
-            
-            
+<header>
+    <div class="contenedor-menu">
+
+        <input type="checkbox" id="menu_bar">
+
+        <label for="menu_bar" class="fa fa-bars"></label>
+
+        <img src="img/logo1.png.png" class="logo-menu">
+
+        <nav class="menu">
+
+            <a href="index.html">
+                <i class="fa fa-home"></i> index
+            </a>
+
+            <a href="productos.html">
+                <i class="fa fa-cubes"></i> productos
+            </a>
+
+            <a href="contacto.html">
+                <i class="fa fa-phone"></i> contacto
+            </a>
+
+            <a href="registro.html">
+                <i class="fa fa-user-plus"></i> registro
+            </a>
+
+            <a href="blog.html">
+                <i class="fa fa-comments"></i> blog
+            </a>
+
+            <a href="compañía.html">
+                <i class="fa fa-building"></i> compañía
+            </a>
+
         </nav>
-    </header>
 
-    
-   
+    </div>
+</header>
+
+
 <main class="contenedor-contacto">
-    <h2>Contáctanos</h2>
-    <p>Déjanos tu mensaje y te responderemos lo más pronto posible.</p>
+
+    <h2>
+        Contáctanos
+    </h2>
+
+    <p>
+        Déjanos tu mensaje y te responderemos lo más pronto posible.
+    </p>
+
 
     <form class="formulario">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
 
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="email" required>
+        <label for="nombre">
+            Nombre:
+        </label>
 
-      <label for="email">Número de teléfono:</label>
-      <input type="email" id="email" name="email" required>
+        <input type="text" id="nombre" name="nombre" required>
 
 
-      <label for="mensaje">Mensaje:</label>
-      <required id="mensaje" name="mensaje" rows="5" required></required>
+        <label for="email">
+            Correo electrónico:
+        </label>
 
-      <button type="submit">Enviar</button>
+        <input type="email" id="email" name="email" required>
+
+
+        <label for="telefono">
+            Número de teléfono:
+        </label>
+
+        <input type="tel" id="telefono" name="telefono" required>
+
+
+        <label for="mensaje">
+            Mensaje:
+        </label>
+
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+
+        <button type="submit">
+            Enviar
+        </button>
+
     </form>
-  </main>
+
+</main>
 
 
+<hr>
 
 
+<footer>
+
+    <div class="contenedor-footer">
+
+        <h3>
+            Redes Sociales
+        </h3>
 
 
+        <div class="redes">
 
-    
-    <hr>
-    <footer>
-        
-        <div class="contenedor-footer">
-            <h3>Redes Sociales</h3>
-            
-            <div class="redes">
-                <a href="https://wa.me/573103851217"target="_blank">
-                    <i class="fa fa-whatsapp"></i>
-                </a>      
-                <a href="https://www.facebook.com/"target="_blank">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/"target="_blank">
-                    <i class="fa fa-instagram"></i>
-                </a>
-                <a href="https://www.youtube.com/"target="_blank">
-                    <i class="fa fa-youtube"></i>
-                </a>
-        
-            </div>
-            
-            <div class="derechos">
-                <p>Derechos reservados &copy; creado por Berenice - 2026</p>
+            <a href="https://wa.me/573103851217" target="_blank">
+                <i class="fa fa-whatsapp"></i>
+            </a>
 
-   
 
-            
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa fa-facebook"></i>
+            </a>
 
-        
+
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+
+
+            <a href="https://www.youtube.com/" target="_blank">
+                <i class="fa fa-youtube"></i>
+            </a>
 
         </div>
-        
-    </footer>
-    <hr>
-    
+
+
+        <div class="derechos">
+
+            <p>
+                Derechos reservados &copy; creado por Berenice - 2026
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
 </body>
+
 </html>
-        
-
-     
-
-
-        
- 

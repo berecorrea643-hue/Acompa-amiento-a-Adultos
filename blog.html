@@ -1,110 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">  <!--estructura del html-->
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Acompañamiento a Mayores</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="css/estilos.css">
-     <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/blog.css">
 </head>
-<body style="margin:0; padding: 0;">
-    
 
+<body>
 
-    <header style="background-color: rgb(100 , 213, 210); width: 100%; height: 80px;">  
-    <header style="background-color: rgb(); width: 100%; height: 80px;">  
-        <nav>
-            <img src="img/logo1.png.png" width="68px"><!--sale de la carpeta con ../-->
-            <a href="index.html" style="color: rgb(17, 16, 16);"><i class="fa fa-home" style="font-size:40px;"></i> Home</a> | <!--sale de la biblioteca-->
-            <a href="Productos.html" style="color: rgb(13, 13, 13);"><i class="fa fa-cubes" style="font-size:40px;"></i> Productos</a> |
-            <a href="Contacto.html" style="color: rgb(7, 7, 7);"><i class="fa fa-phone" style="font-size:40px;"></i> Contacto</a> |
-            <a href="Registrar.html" style="color: rgb(11, 11, 11);"><i class="fa fa-user-plus" style="font-size:40px;"></i> Registrar</a> |
-            <a href="Blog.html" style="color: rgb(11, 11, 11);"><i class="fa fa-comments"" style="font-size:40px;"></i> Blog</a> |
-            <a href="Compañía.html" style="color: rgb(11, 11, 11);"><i class="fa fa-building" style="font-size:40px;"></i> Compañía</a> |
-            
-            
+<header>
+
+    <div class="contenedor-menu">
+
+        <input type="checkbox" id="menu_bar">
+
+        <label for="menu_bar" class="fa fa-bars"></label>
+
+        <img src="img/logo1.png.png" class="logo-menu">
+
+        <nav class="menu">
+
+            <a href="index.html">
+                <i class="fa fa-home"></i> index
+            </a>
+
+            <a href="productos.html">
+                <i class="fa fa-cubes"></i> productos
+            </a>
+
+            <a href="contacto.html">
+                <i class="fa fa-phone"></i> contacto
+            </a>
+
+            <a href="registro.html">
+                <i class="fa fa-user-plus"></i> registro
+            </a>
+
+            <a href="blog.html">
+                <i class="fa fa-comments"></i> blog
+            </a>
+
+            <a href="compañía.html">
+                <i class="fa fa-building"></i> compañía
+            </a>
+
         </nav>
-    </header>
 
-<main class="contenedor-blog">
-  <h2>Nuestro Blog</h2>
-    <p>Encuentra artículos y consejos sobre acompañamiento a mayores.</p>
+    </div>
 
-  <section class="articulos">
-    <article class="post">
-      <img src="img/blog1.webp" alt="Cuidado en casa" class="imagen-post">
-      <h3>Consejos para el cuidado en casa</h3>
-      <p>Descubre cómo organizar rutinas diarias para mejorar la calidad de vida de los adultos mayores.</p>
-      <a href="post1.html" class="btn">Leer más</a>
-    </article>
+</header>
 
-    <article class="post">
-      <img src="img/blog2.jpg" alt="Actividades recreativas" class="imagen-post">
-      <h3>Actividades recreativas para mayores</h3>
-      <p>Ideas de paseos y juegos que ayudan a mantener la mente activa y el cuerpo en movimiento.</p>
-      <a href="post2.html" class="btn">Leer más</a>
-    </article>
+<main>
 
-    <article class="post">
-      <img src="img/blog3.webp" alt="Compañía emocional" class="imagen-post">
-      <h3>La importancia de la compañía</h3>
-      <p>El acompañamiento emocional es clave para la felicidad y bienestar de nuestros mayores.</p>
-      <a href="post3.html" class="btn">Leer más</a>
-    </article>
-  </section>
-  <section class="destacado">
-    <h2>Lo más leído</h2>
-    <article>
-      <img src="img/popular1.webp" alt="Artículo popular">
-      <h3>Comida saludable para mayores</h3>
-      <a href="popular1.html" class="btn">Leer más</a>
-    </article>
-  </section>
-</main
+    <section id="contenedor">
 
-    <hr>
-    <footer>
-        
-        <div class="contenedor-footer">
-            <h3>Redes Sociales</h3>
-            
-            <div class="redes">
-                <a href="https://wa.me/573103851217"target="_blank">
-                    <i class="fa fa-whatsapp"></i>
-                </a>      
-                <a href="https://www.facebook.com/"target="_blank">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/"target="_blank">
-                    <i class="fa fa-instagram"></i>
-                </a>
-                <a href="https://www.youtube.com/"target="_blank">
-                    <i class="fa fa-youtube"></i>
-                </a>
-        
-            </div>
-            
-            <div class="derechos">
-                <p>Derechos reservados &copy; creado por Berenice - 2026</p>
 
-   
+        <div class="image">
 
-            
+            <img src="img/blog1.webp" alt="">
 
-        
+            <p>
+                CONSEJOS PARA EL CUIDADO EN CASA
+            </p>
+
+            <a href="consejos para el cuidado en casa.html">
+
+                <button>
+                    Ver más
+                </button>
+
+            </a>
 
         </div>
-        
-    </footer>
-    <hr>
-    
+
+
+        <div class="image">
+
+            <img src="img/blog2.jpg" alt="">
+
+            <p>
+                ACTIVIDADES RECREATIVAS PARA MAYORES
+            </p>
+
+            <a href="actividades  recreativas para mayores.html">
+
+                <button>
+                    Ver más
+                </button>
+
+            </a>
+
+        </div>
+
+        <div class="image">
+
+            <img src="img/blog3.webp" alt="">
+
+            <p>
+                LA IMPORTANCIA DE LA COMPAÑÍA
+            </p>
+
+            <a href="la importancia de la compañía.html">
+
+                <button>
+                    Ver más
+                </button>
+
+            </a>
+
+        </div>
+
+        <div class="image">
+
+            <img src="img/popular1.webp" alt="">
+
+            <p>
+                COMIDA SALUDABLE PARA MAYORES
+            </p>
+
+            <a href="comida saludable para mayores.html">
+
+                <button>
+                    Ver más
+                </button>
+
+            </a>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+
+<footer>
+
+    <div class="contenedor-footer">
+
+        <h3>
+            Redes Sociales
+        </h3>
+
+
+        <div class="redes">
+
+            <a href="https://wa.me/573103851217" target="_blank">
+                <i class="fa fa-whatsapp"></i>
+            </a>
+
+
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa fa-facebook"></i>
+            </a>
+
+
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+
+
+            <a href="https://www.youtube.com/" target="_blank">
+                <i class="fa fa-youtube"></i>
+            </a>
+
+        </div>
+
+
+        <div class="derechos">
+
+            <p>
+                Derechos reservados &copy; creado por Berenice - 2026
+            </p>
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+
 </body>
+
 </html>
-        
-
-     
-
-
-        
- 

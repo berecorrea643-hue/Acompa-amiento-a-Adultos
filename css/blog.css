@@ -1,197 +1,290 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
+body{
+font-family:Arial,sans-serif;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+main{
+    flex:1;
 }
 
-
-header {
-  background-color: rgb(100 , 213, 210);
-  width: 100%;
-  height: 80px;
+header{
+background-color:rgb(100,213,210);
+width:100%;
+height:80px;
 }
 
-nav {
-  text-align: left;
-  padding: 20px;
+.contenedor-menu{
+width:100%;
+height:80px;
+position:relative;
 }
 
-nav a {
-  text-decoration: none;
-  margin: 10px;
-  color: #111;
-  font-size: 18px;
+.logo-menu{
+width:68px;
+height:68px;
+object-fit:cover;
+position:absolute;
+left:20px;
+top:50%;
+transform:translateY(-50%);
 }
 
-nav a i {
-  margin-right: 5px;
-}
-.post-blog {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 20px;
+.menu{
+height:80px;
+display:flex;
+justify-content:center;
+align-items:center;
 }
 
-.post-blog h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #2c6432;
+.menu a{
+text-decoration:none;
+margin:10px;
+color:#111;
+font-size:18px;
 }
 
-.articulos {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+.menu i{
+margin-right:5px;
+font-size:35px;
 }
 
-.post {
-  width: 280px;
-  text-align: center;
+#menu_bar{
+display:none;
 }
 
-.post img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
+header label{
+display:none;
 }
 
-.post h3 {
-  color: #333;
-  margin-bottom: 10px;
+#contenedor{
+margin-top:50px;
+margin-bottom:50px;
+text-align:center;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
 }
 
-.post p {
-  color: #555;
-  margin-bottom: 15px;
+#contenedor .image{
+width:200px;
+height:350px;
+margin:10px;
+padding:10px;
+background-color:rgb(233,233,147);
+border-radius:10px;
+box-shadow:3px 3px 7px rgb(8,28,144);
 }
 
-.btn {
-  display: inline-block;
-  padding: 8px 12px;
-  background-color: #2c6432;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-.btn:hover {
-  background-color: #16e024;
-}
-.destacado {
-  background-color: #eef9f0;   
-  padding: 20px;              
-  border-radius: 10px;      
-  margin: 40px 0;           
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.15); 
+#contenedor img{
+width:100%;
+height:60%;
+object-fit:cover;
+border-radius:10px;
 }
 
-.destacado h2 {
-  color: #2c6432;          
-  margin-bottom: 15px;
+.image p{
+color:black;
+padding:5px;
+font-family:'Times New Roman',Times,serif;
+font-weight:bold;
+font-size:18px;
 }
 
-.destacado article {
-  max-width: 300px;
-  margin: 0 auto;           
+.image button{
+border:none;
+width:90%;
+height:30px;
+border-radius:5px;
+background-color:rgb(214,236,14);
+color:rgb(17,130,195);
+cursor:pointer;
+box-shadow:2px 2px 4px rgb(46,214,172);
 }
 
-.destacado img {
-  width: 80%;
-  height: 180px;
-  object-fit: cover;          
-  border-radius: 8px;
-  margin-bottom: 10px;
+.image button:hover{
+background-color:rgb(16,224,36);
 }
 
-.destacado h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+footer{
+background:black;
+color:white;
+position:relative;
+padding:30px;
+min-height:150px;
 }
 
-.destacado .btn {
-  display: inline-block;
-  padding: 8px 12px;
-  background-color: #2c6432;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-}
-.destacado .btn:hover {
-  background-color: #16e024;
+.contenedor-footer{
+position:relative;
+min-height:120px;
 }
 
-footer {
-  background-color: black ;
-  color: white ;
-  position: relative;
-  padding: 30px;
-  min-height: 150px;
-}
-.contenedor-footer {
-  position: relative;
-  min-height: 120px;
-}
-.contenedor-footer h3 {
-  text-align: center;
-
-}
-.redes {
-  position: absolute;
-  right: 30px;
-  top: 45px;
-
-}
-.redes a {
-  font-size: 50px;
-}
-.redes .fa-whatsapp {
-  color:#11550b;
-}
-.redes .fa-facebook {
-  color: #1877F2;
-}
-.redes .fa-instagram {
-  color: #f227ae;
-}
-.redes .fa-youtube {
-    color: #FF0000;
-
+.contenedor-footer h3{
+text-align:center;
 }
 
-.derechos {
-  position: absolute;
-  left: 30px;
-  bottom: 10px;
-
-}
-.derechos p {
-  margin: 0;
-  font-size: 14px;
-
-}
-footer hr {
-  border: 0;
-  border-top: 1px solid white;
-
+.redes{
+position:absolute;
+right:30px;
+top:45px;
 }
 
-
-@media (max-width: 768px) {
-  .articulos {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.redes a{
+font-size:50px;
 }
 
-/* Móvil */
-@media (max-width: 480px) {
-  .articulos {
-    grid-template-columns: 1fr;
-  }
+.redes .fa-whatsapp{
+color:#11550b;
+}
+
+.redes .fa-facebook{
+color:#1877F2;
+}
+
+.redes .fa-instagram{
+color:#f227ae;
+}
+
+.redes .fa-youtube{
+color:#FF0000;
+}
+
+.derechos{
+position:absolute;
+left:30px;
+bottom:10px;
+}
+
+.derechos p{
+font-size:14px;
+}
+
+@media(max-width:480px){
+
+header{
+height:60px;
+}
+
+.contenedor-menu{
+height:60px;
+}
+
+.logo-menu{
+width:55px;
+height:55px;
+}
+
+header label{
+display:block;
+position:absolute;
+right:20px;
+top:15px;
+font-size:30px;
+cursor:pointer;
+}
+
+.menu{
+position:absolute;
+top:60px;
+left:0;
+width:100%;
+background:rgb(100,213,210);
+display:none;
+flex-direction:column;
+z-index:100;
+}
+
+.menu a{
+display:block;
+width:100%;
+padding:15px;
+margin:0;
+}
+
+.menu i{
+font-size:25px;
+}
+
+#menu_bar:checked ~ .menu{
+display:flex;
+}
+
+#mision-vision{
+flex-direction:column;
+align-items:center;
+}
+
+#mision-vision article{
+width:90%;
+}
+
+.miembros{
+flex-direction:column;
+align-items:center;
+}
+
+.contenedor{
+width:90%;
+}
+
+.redes{
+position:static;
+text-align:center;
+margin-top:25px;
+}
+
+.redes a{
+font-size:35px;
+}
+
+.derechos{
+position:static;
+text-align:center;
+margin-top:30px;
+}
+
+}
+
+@media(min-width:481px) and (max-width:768px){
+
+#mision-vision{
+flex-direction:column;
+align-items:center;
+}
+
+#mision-vision article{
+width:70%;
+}
+
+.contenedor{
+width:45%;
+}
+
+.menu a{
+font-size:15px;
+}
+
+.menu i{
+font-size:25px;
+}
+
+}
+
+@media(min-width:769px) and (max-width:1200px){
+
+#mision-vision article{
+width:40%;
+}
+
+.contenedor{
+width:30%;
+}
+
 }

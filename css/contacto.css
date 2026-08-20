@@ -1,189 +1,277 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
+body{
+font-family:Arial,sans-serif;
 }
 
-
-header {
-  background-color: rgb(100, 213, 210);
-  width: 100%;
-  height: 80px;
+header{
+width:100%;
+height:80px;
+background-color:rgb(100,213,210);
 }
 
-nav {
-  text-align: left;
-  padding: 20px;
+.contenedor-menu{
+width:100%;
+height:80px;
+position:relative;
 }
 
-nav a {
-  text-decoration: none;
-  margin: 10px;
-  color: #111;
-  font-size: 18px;
+.logo-menu{
+width:68px;
+height:68px;
+object-fit:contain;
+position:absolute;
+left:20px;
+top:50%;
+transform:translateY(-50%);
 }
 
-nav a i {
-  margin-right: 5px;
+.menu{
+width:100%;
+height:80px;
+display:flex;
+justify-content:center;
+align-items:center;
 }
 
-
-.contenedor-contacto {
-  max-width: 900px;    
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+.menu a{
+text-decoration:none;
+color:#111;
+margin:0 10px;
+font-size:18px;
 }
 
-.contenedor-contacto h2 {
-  text-align: center;
-  color: #2c6432;
-  margin-bottom: 10px;
+.menu i{
+font-size:35px;
+margin-right:5px;
 }
 
-.contenedor-contacto p {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
+#menu_bar{
+display:none;
 }
 
-/* Estilo del formulario */
-.formulario {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+header label{
+display:none;
 }
 
-.formulario label {
-  font-weight: bold;
-  color: #444;
+.contenedor-contacto{
+max-width:900px;
+margin:40px auto;
+padding:30px;
+background:#f9f9f9;
+border-radius:10px;
+box-shadow:2px 2px 8px rgba(0,0,0,0.2);
 }
 
-.formulario input,
-.formulario button {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 16px;
+.contenedor-contacto h2{
+text-align:center;
+color:#2c6432;
+margin-bottom:10px;
 }
 
-.formulario button {
-  background-color: #2c6432;
-  color: white;
-  cursor: pointer;
-  border: none;
-  transition: background-color 0.3s ease;
+.contenedor-contacto p{
+text-align:center;
+margin-bottom:20px;
+color:#333;
 }
 
-.formulario button:hover {
-  background-color: #16e024;
+.formulario{
+display:flex;
+flex-direction:column;
+gap:15px;
 }
 
-
-footer {
-  background-color: black ;
-  color: white ;
-  position: relative;
-  padding: 30px;
-  min-height: 150px;
-}
-.contenedor-footer {
-  position: relative;
-  min-height: 120px;
-}
-.contenedor-footer h3 {
-  text-align: center;
-
-}
-.redes {
-  position: absolute;
-  right: 30px;
-  top: 45px;
-
-}
-.redes a {
-  font-size: 50px;
-}
-.redes .fa-whatsapp {
-  color:#11550b;
-}
-.redes .fa-facebook {
-  color: #1877F2;
-}
-.redes .fa-instagram {
-  color: #f227ae;
-}
-.redes .fa-youtube {
-    color: #FF0000;
-
-}
-
-.derechos {
-  position: absolute;
-  left: 30px;
-  bottom: 10px;
-
-}
-.derechos p {
-  margin: 0;
-  font-size: 14px;
-
-}
-footer hr {
-  border: 0;
-  border-top: 1px solid white;
-
-}
-
-.contenedor-contacto {
-  max-width: 900px;       
-  margin: 40px auto;      
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-}
-
-.formulario {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.formulario label{
+font-weight:bold;
+color:#444;
 }
 
 .formulario input,
-.formulario button {
-  padding: 10px;
-  font-size: 16px;
+.formulario textarea,
+.formulario button{
+padding:10px;
+border-radius:5px;
+border:1px solid #ccc;
+font-size:16px;
 }
 
-
-@media (max-width: 768px) {
-  .contenedor-contacto {
-    max-width: 600px;
-    padding: 15px;
-  }
-  .formulario input,
-  .formulario button {
-    font-size: 14px;
-  }
+.formulario button{
+background-color:#2c6432;
+color:white;
+border:none;
+cursor:pointer;
 }
 
-@media (max-width: 480px) {
-  .contenedor-contacto {
-    max-width: 95%;
-    padding: 10px;
-  }
-  .formulario {
-    gap: 10px;
-  }
-  .formulario input,
-  .formulario button {
-    font-size: 14px;
-    width: 100%; 
-  }
+.formulario button:hover{
+background-color:#16e024;
+}
+
+footer{
+background:black;
+color:white;
+position:relative;
+padding:20px;
+height:130px;
+}
+
+.contenedor-footer{
+position:relative;
+height:90px;
+}
+
+.contenedor-footer h3{
+text-align:center;
+}
+
+.redes{
+position:absolute;
+right:30px;
+top:35px;
+}
+
+.redes a{
+font-size:50px;
+margin:0 5px;
+}
+
+.redes .fa-whatsapp{
+color:#11550b;
+}
+
+.redes .fa-facebook{
+color:#1877F2;
+}
+
+.redes .fa-instagram{
+color:#f227ae;
+}
+
+.redes .fa-youtube{
+color:#FF0000;
+}
+
+.derechos{
+position:absolute;
+left:30px;
+bottom:5px;
+}
+
+.derechos p{
+font-size:14px;
+}
+
+@media(max-width:900px) and (min-width:601px){
+
+.menu a{
+font-size:16px;
+margin:5px;
+}
+
+.menu i{
+font-size:28px;
+}
+
+.contenedor-contacto{
+width:90%;
+}
+
+}
+
+@media(max-width:600px){
+
+header{
+height:60px;
+}
+
+.contenedor-menu{
+height:60px;
+}
+
+.logo-menu{
+width:55px;
+height:55px;
+left:15px;
+}
+
+header label{
+display:block;
+position:absolute;
+right:20px;
+top:15px;
+font-size:28px;
+cursor:pointer;
+z-index:200;
+}
+
+.menu{
+position:absolute;
+top:60px;
+left:0;
+width:100%;
+height:auto;
+background:rgb(100,213,210);
+display:block;
+transform:translateX(-100%);
+transition:.3s;
+z-index:100;
+}
+
+.menu a{
+display:block;
+width:100%;
+padding:15px;
+margin:0;
+font-size:16px;
+}
+
+.menu i{
+font-size:25px;
+}
+
+#menu_bar:checked ~ .menu{
+transform:translateX(0);
+}
+
+.contenedor-contacto{
+width:90%;
+margin:25px auto;
+padding:20px;
+}
+
+.contenedor-contacto h2{
+font-size:25px;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario button{
+width:100%;
+}
+
+footer{
+height:auto;
+min-height:180px;
+padding:20px;
+}
+
+.redes{
+position:static;
+text-align:center;
+margin-top:20px;
+}
+
+.redes a{
+font-size:35px;
+}
+
+.derechos{
+position:static;
+text-align:center;
+margin-top:20px;
+}
+
 }
