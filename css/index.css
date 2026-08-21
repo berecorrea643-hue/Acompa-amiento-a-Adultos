@@ -6,302 +6,595 @@
 
 body{
     font-family:Arial,sans-serif;
+    width:100%;
+    overflow-x:hidden;
 }
 
+
+/* ================= HEADER ================= */
+
 header{
+
     background-color:rgb(136,224,220);
     width:100%;
     height:80px;
+
 }
 
+
 .contenedor-menu{
+
     width:100%;
     height:80px;
     position:relative;
+
 }
+
 
 .logo-menu{
+
     width:68px;
     height:68px;
+
     object-fit:contain;
+
     position:absolute;
+
     left:20px;
+
     top:50%;
+
     transform:translateY(-50%);
+
 }
+
+
+/* MENU PC */
 
 .menu{
+
     height:80px;
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
+
 }
+
 
 .menu a{
+
     text-decoration:none;
+
     margin:0 10px;
+
     color:#111;
+
     font-size:18px;
+
 }
+
 
 .menu i{
+
     margin-right:5px;
-    font-size:35px;
+
+    font-size:30px;
+
 }
+
 
 #menu_bar{
+
     display:none;
+
 }
 
+
 header label{
+
     display:none;
+
 }
+
+
+/* ================= BANNER ================= */
+
+
+#banner{
+
+    width:100%;
+
+}
+
+
+#banner img{
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+}
+
+
+
+/* ================= NOSOTROS ================= */
+
+
+#nosotros{
+
+    padding:30px;
+
+}
+
+
+#nosotros h3{
+
+    text-align:center;
+
+    font-size:25px;
+
+    margin-bottom:15px;
+
+}
+
+
+#nosotros p{
+
+    font-size:17px;
+
+    line-height:1.5;
+
+    text-align:justify;
+
+}
+
+
+
+/* ================= PRODUCTOS ================= */
+
+
+#productos h3{
+
+    text-align:center;
+
+    font-size:25px;
+
+}
+
 
 
 #contenedor{
+
     margin-top:50px;
+
     margin-bottom:50px;
-    text-align:center;
+
     display:flex;
+
     flex-wrap:wrap;
+
     justify-content:center;
+
     gap:20px;
+
 }
 
+
+
 #contenedor .image{
+
     width:280px;
+
     height:400px;
+
     box-shadow:3px 3px 7px rgb(8,28,144);
+
     padding:10px;
-    background-color:rgb(134, 241, 115);
+
+    background-color:rgb(134,241,115);
+
     border-radius:10px;
+
     display:flex;
+
     flex-direction:column;
+
     justify-content:space-between;
+
     position:relative;
+
     overflow:hidden;
+
     cursor:pointer;
-    transition:transform 0.5s ease,box-shadow 0.5s ease;
+
+    transition:.5s;
+
 }
+
 
 
 #contenedor .image:hover{
+
     transform:translateY(-15px) scale(1.05);
-    box-shadow:0 15px 25px rgba(0,0,0,0.35),0 0 20px rgb(136,224,220);
+
+    box-shadow:0 15px 25px rgba(0,0,0,.35);
+
 }
+
 
 
 #contenedor img{
+
     width:100%;
+
     height:210px;
+
     object-fit:cover;
+
     border-radius:10px;
-    transition:transform 0.6s ease;
+
+    transition:.6s;
+
 }
+
+
 
 #contenedor .image:hover img{
+
     transform:scale(1.15);
+
 }
 
 
-#contenedor .image::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:-120%;
-    width:80%;
-    height:100%;
-    background:linear-gradient(120deg,transparent,rgba(255,255,255,0.7),transparent);
-    transform:skewX(-25deg);
-    transition:0.7s;
-}
-
-#contenedor .image:hover::before{
-    left:130%;
-}
 
 .image p{
+
     color:black;
-    padding:5px;
-    font-family:'Times New Roman',Times,serif;
+
+    font-family:'Times New Roman';
+
     font-weight:bold;
+
     font-size:18px;
+
+    text-align:center;
+
 }
 
 
-.image button{
-    border:none;
+
+/* ================= CONTACTO ================= */
+
+
+#contacto{
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+#contacto iframe{
+
     width:90%;
-    height:30px;
-    border-radius:5px;
-    background-color:rgb(214,236,14);
-    color:rgb(17,130,195);
-    cursor:pointer;
-    box-shadow:2px 2px 4px rgb(46,214,172);
+
+    max-width:900px;
+
+    height:350px;
+
+    border:0;
+
 }
 
-.image button:hover{
-    background-color:rgb(16,224,36);
-    box-shadow:2px 2px 4px rgb(73,3,77);
-}
+
+
+/* ================= FOOTER ================= */
 
 
 footer{
-    background-color:black;
+
+    background:black;
+
     color:white;
-    position:relative;
+
     padding:30px;
-    min-height:150px;
+
 }
 
-.contenedor-footer{
-    position:relative;
-    min-height:120px;
-}
 
 .contenedor-footer h3{
+
     text-align:center;
+
 }
+
+
 
 .redes{
-    position:absolute;
-    right:30px;
-    top:45px;
+
+    text-align:center;
+
+    margin-top:20px;
+
 }
+
+
 
 .redes a{
-    font-size:50px;
-    margin:0 8px;
+
+    font-size:45px;
+
+    margin:0 10px;
+
 }
+
+
 
 .redes .fa-whatsapp{
-    color:#11550b;
+
+    color:#25D366;
+
 }
+
 
 .redes .fa-facebook{
+
     color:#1877F2;
+
 }
+
 
 .redes .fa-instagram{
+
     color:#f227ae;
+
 }
+
 
 .redes .fa-youtube{
-    color:#FF0000;
+
+    color:red;
+
 }
+
+
 
 .derechos{
-    position:absolute;
-    left:30px;
-    bottom:10px;
-}
 
-.derechos p{
-    margin:0;
-    font-size:14px;
-}
+    text-align:center;
 
-footer hr{
-    border:0;
-    border-top:1px solid white;
-}
-
-
-@media(max-width:1024px) and (min-width:601px){
-
-    .menu a{
-        font-size:16px;
-        margin:5px;
-    }
-
-    .menu i{
-        font-size:30px;
-    }
-
-    #contenedor .image{
-        width:250px;
-    }
+    margin-top:25px;
 
 }
+
+
+
+/* ================= TABLET ================= */
+
+
+@media(max-width:1024px){
+
+
+.menu a{
+
+    font-size:16px;
+
+    margin:5px;
+
+}
+
+
+.menu i{
+
+    font-size:25px;
+
+}
+
+
+
+#contenedor .image{
+
+    width:250px;
+
+}
+
+
+}
+
+
+
+/* ================= CELULAR ================= */
+
 
 @media(max-width:600px){
 
-    header{
-        height:60px;
-    }
 
-    .contenedor-menu{
-        height:60px;
-    }
+header{
 
-    .logo-menu{
-        width:55px;
-        height:55px;
-        left:15px;
-    }
+    height:60px;
 
-    header label{
-        display:block;
-        position:absolute;
-        right:20px;
-        top:15px;
-        font-size:30px;
-        color:white;
-        cursor:pointer;
-    }
+}
 
-    .menu{
-        position:absolute;
-        top:60px;
-        left:0;
-        width:100%;
-        height:auto;
-        background:rgb(44,100,50);
-        display:block;
-        transform:translateX(-100%);
-        transition:.3s;
-        z-index:100;
-    }
 
-    .menu a{
-        display:block;
-        padding:15px;
-        color:rgb(121, 189, 13);
-        margin:0;
-    }
+.contenedor-menu{
 
-    .menu i{
-        font-size:25px;
-    }
+    height:60px;
 
-    #menu_bar:checked  .menu{
-        transform:translateX(0);
-    }
+}
 
-    #contenedor{
-        flex-direction:column;
-        align-items:center;
-    }
 
-    #contenedor .image{
-        width:90%;
-        max-width:320px;
-    }
+.logo-menu{
 
-    .redes{
-        position:static;
-        text-align:center;
-        margin-top:25px;
-    }
+    width:55px;
 
-    .redes a{
-        font-size:35px;
-    }
+    height:55px;
 
-    .derechos{
-        position:static;
-        text-align:center;
-        margin-top:30px;
-    }
+    left:15px;
+
+}
+
+
+
+/* boton hamburguesa */
+
+
+header label{
+
+    display:block;
+
+    position:absolute;
+
+    right:20px;
+
+    top:15px;
+
+    font-size:30px;
+
+    color:white;
+
+    cursor:pointer;
+
+    z-index:1000;
+
+}
+
+
+
+.menu{
+
+    position:absolute;
+
+    top:60px;
+
+    left:0;
+
+    width:100%;
+
+    height:auto;
+
+    background:rgb(44,100,50);
+
+    display:block;
+
+    transform:translateX(-100%);
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+
+
+/* CORRECCION DEL MENU */
+
+#menu_bar:checked ~ .menu{
+
+    transform:translateX(0);
+
+}
+
+
+
+.menu a{
+
+    display:block;
+
+    padding:15px;
+
+    color:white;
+
+    border-bottom:1px solid rgba(255,255,255,.3);
+
+    font-size:18px;
+
+}
+
+
+
+.menu i{
+
+    font-size:25px;
+
+}
+
+
+
+#banner img{
+
+    width:100%;
+
+    height:auto;
+
+}
+
+
+
+#nosotros{
+
+    padding:20px;
+
+}
+
+
+
+#nosotros h3{
+
+    font-size:22px;
+
+}
+
+
+
+#nosotros p{
+
+    font-size:15px;
+
+}
+
+
+
+#contenedor{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+
+#contenedor .image{
+
+    width:90%;
+
+    max-width:320px;
+
+}
+
+
+
+#contacto iframe{
+
+    width:100%;
+
+    height:250px;
+
+}
+
+
+
+.redes a{
+
+    font-size:35px;
+
+}
+
 
 }
